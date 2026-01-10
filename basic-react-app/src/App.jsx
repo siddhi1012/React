@@ -8,7 +8,10 @@ function App() {
   return (
 
     <div>
-    <p> 2 * 2 = {2 * 2}</p>
+      <h1>This is my app component</h1>
+      <p>Inside app Component</p>
+      <Title/>
+      <Title/>
     </div>
 
   );
