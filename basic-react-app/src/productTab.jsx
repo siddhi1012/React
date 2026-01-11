@@ -2,9 +2,9 @@ import Product from "./Product.jsx";
 function productTab() {
     return (
         <>
-            <Product></Product>
-            <Product></Product>
-            <Product></Product>
+            <Product title="phone"></Product>
+            <Product title="laptop"></Product>
+            <Product title="ipad"></Product>
         </>
     );
 }
