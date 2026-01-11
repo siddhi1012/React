@@ -1,5 +1,5 @@
 import Product from "./Product.jsx";
-
+import  Activity  from "./Activity.jsx";
 function ProductTab() {
     let options = ["fast","durable"];
   return (

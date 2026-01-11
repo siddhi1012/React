@@ -1,12 +1,19 @@
 import "./App.css";
 import Title from "./Title.jsx";
 import ProductTab from "./productTab.jsx";
-
+import Activity from "./Activity.jsx";
 // function Title() {
 //   return <h1>I am the  title</h1>
 // }
 function App() {
-  return <ProductTab />
+  return(
+    <>
+      <Activity userName ="Siddhi" textColor="teal"/>
+      <ProductTab />
+    </>
+
+
+  );
 }
 
 
