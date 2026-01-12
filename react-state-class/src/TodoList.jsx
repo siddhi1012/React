@@ -15,7 +15,7 @@ export default function TodoList() {
         setNewTodo(event.target.value);
     };
     let deleteTodo = () => {
-        console.log("Task Deleted")
+        console.log("Task Deleted");
     }
     return (
         <div>
