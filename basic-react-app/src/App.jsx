@@ -1,16 +1,20 @@
 import "./App.css";
 import Title from "./Title.jsx";
 import ProductTab from "./productTab.jsx";
+import Button from "./Button.jsx";
+import Form from "./Form.jsx";
 // import Activity from "./Activity.jsx";
 // function Title() {
 //   return <h1>I am the  title</h1>
 // }
 function App() {
-  return(
+  return (
     <>
       {/* <Activity userName ="Siddhi" textColor="teal"/> */}
-      <h2>Blockbuster Deals | Shop Now </h2>
-      <ProductTab />
+      {/* <h2>Blockbuster Deals | Shop Now </h2>
+      <ProductTab /> */}
+      {/* <Button /> */}
+      <Form />
     </>
 
 
