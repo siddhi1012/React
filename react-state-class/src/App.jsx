@@ -4,10 +4,22 @@ import './App.css'
 // import Ludo from './Ludo';
 // import TodoList from './TodoList';
 import Lottery from './Lottery';
+// import Ticket from './Ticket';
+import{ sum } from "./helper.js"
 function App() {
+  let winCondition = (ticket) => {
+    return ticket[0] === 0;
+    //ticket.every ((num) => num === ticket[0]);
+    //sum(ticket) === 15;
+  }
+
   return (
+
     <>
-      <Lottery />
+      <Lottery n ={3} winCondition={winCondition}/>
+      {/* <Ticket ticket={[0,1,2]} />
+       <Ticket ticket={[0,1,2,4,5,6]} /> */}
+
 
 
       {/* <TodoList /> */}
