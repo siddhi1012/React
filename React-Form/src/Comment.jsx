@@ -1,23 +1,32 @@
 import { useState } from "react"
 import "./Comment.css";
+import CommentsForm from "./CommentsForm";
 export default function Comment() {
     let [comments, setComments] = useState([{
         username: "@sg",
         remarks: "Well Done",
         rating: 4
     }])
+
+    let addNewComment = (comment) => {
+        setComments((currComments) =>
+            [...currComments, comment]
+        )
+    };
+
     return (
         <div>
             <h3>All Comments</h3>
-            <div className="comment">
-
-                <span>{comments[0].remarks}</span>
-                &nbsp; &nbsp;
-                <span>(Rating: {comments[0].rating})</span>
-                <p>-{comments[0].username}</p>
-
-            </div>
-
+            {comments.map((comment, idx) => (
+                <div className="comment" key={idx}>
+                    <span>{comment.remarks}</span>
+                    &nbsp; &nbsp;
+                    <span>(Rating: {comment.rating})</span>
+                    <p>-{comment.username}</p>
+                </div>
+            ))}
+            <hr /> <hr />
+            <CommentsForm addNewComment={addNewComment} />
         </div>
     )
 }

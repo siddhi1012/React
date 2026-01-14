@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export default function CommentsForm() {
+export default function CommentsForm({ addNewComment }) {
     let [formData, setFormData] = useState({
         username: "",
         remarks: "",
@@ -14,12 +14,15 @@ export default function CommentsForm() {
     }
 
     let handleSubmit = (event) => {
+
         event.preventDefault();
+        addNewComment(formData);
         console.log(formData);
+        event.preventDefault();
         setFormData({
             username: "",
             remarks: "",
-            rating: ""
+            rating: 5
         })
     }
 
